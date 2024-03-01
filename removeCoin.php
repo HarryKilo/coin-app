@@ -9,6 +9,5 @@ $query=$db->prepare('DELETE FROM `coins` WHERE `id`=' . $coinId);
 $query->execute();
 
 header("Location: index.php");
-exit();
 
 

@@ -1,5 +1,15 @@
 <?php
 session_start();
+
+$db = new PDO('mysql:host=db; dbname=coin_app', 'root', 'password');
+$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+$db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
+
+$query = $db->prepare('SELECT `id`, `issuer`, `type`, `obverse`, `reverse`, `grade`, `value`, `image` FROM `coins`;');
+$query->execute();
+
+$result = $query->fetchAll();
+
 ?>
 
 <!DOCTYPE html>
@@ -11,20 +21,6 @@ session_start();
 </head>
 <body>
 
-
-<?php
-$db = new PDO('mysql:host=db; dbname=coin_app', 'root', 'password');
-$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-$db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
-
-$query = $db->prepare('SELECT `id`, `issuer`, `type`, `obverse`, `reverse`, `grade`, `value`, `image` FROM `coins`;');
-$query->execute();
-
-$result = $query->fetchAll();
-
-
-
-?>
 <div class = "aboutAndTopFiveTitle">
     <div class ="aboutDiv"><a href="#About"> ABOUT </a></div>
     <div class=siteTitle><img id="siteLogo" src="images/siteLogo1.png"></div>
@@ -56,7 +52,7 @@ $result = $query->fetchAll();
 
 <div class="coinsDiv">
     <?php
-    if(isset($_SESSION['sort'])){
+    if(isset($_SESSION['sort']) && isset($_GET['sort'])){
         $result = $_SESSION['sort'];
     }
     foreach ($result as $output)

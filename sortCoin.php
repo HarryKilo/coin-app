@@ -11,11 +11,11 @@ if (!empty($sort)) {
     $query=$db->prepare("SELECT id, issuer, type, obverse, reverse, `value`, grade, image FROM `coins` ORDER BY " . $sort . " ASC");
     $query->execute();
     $_SESSION['sort'] = $query->fetchAll();
-    header("Location: index.php");
+    header("Location: index.php?sort=true");
 
 } else {
     $query=$db->prepare("SELECT id, issuer, type, obverse, reverse, `value`, grade, image FROM `coins` ORDER BY issuer ASC");
     $query->execute();
     $_SESSION['sort'] = $query->fetchAll();
-    header("Location: index.php");
+    header("Location: index.php?sort=true");
 }
