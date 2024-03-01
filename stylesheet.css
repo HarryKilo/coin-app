@@ -1,0 +1,352 @@
+body{
+    font-family: "Inknut Antiqua";
+    background-color: #F0ECE3;
+    background-image: url("images/Beige Minimalistic Rome Italy Poster.png");
+    background-size: contain;
+    }
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+a{
+    text-decoration: none;
+    color: #79705D;
+
+}
+
+.aboutAndTopFiveTitle{
+    display: flex;
+    /*margin-right: 1rem;*/
+    /*margin-left: 1rem;*/
+    font-size: x-large;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: thick double #048c7f;
+}
+.siteTitle{
+    text-align: center;
+    color: #79705D;
+    font-family: "Trajanus Roman";
+    font-size: xxx-large;
+    /*border-bottom-style: solid;*/
+    /*border-bottom: #036c5f;*/
+    /*padding-top: 2rem;*/
+    /*padding-bottom: 0.5rem;*/
+    /*margin-top: -3rem;*/
+}
+
+#siteLogo{
+    width: 50%;
+    height: fit-content;
+
+}
+
+.topFive{
+    font-family: Constantine;
+    width: 20rem;
+    text-align: center;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #79705D;
+    padding: 1rem;
+
+}
+
+.aboutDiv{
+    font-family: Constantine;
+    width: 20rem;
+    text-align: center;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #79705D;
+    padding: 1rem;
+
+
+}
+.topFive:hover {
+    background-color: antiquewhite;
+    color: #F0ECE3;
+    box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.32);}
+
+.aboutDiv:hover {
+    background-color: antiquewhite;
+    color: #F0ECE3;
+    box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.32);}
+
+
+
+
+
+.navBar{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.coinSort{
+    display: flex;
+    justify-content: center;
+    margin-top: -1rem;
+    gap: 3rem;
+}
+
+
+.navSubmitButton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button{
+    font-family: "Trajanus Roman";
+    color: #79705D;
+    background-color: white;
+    padding: 1rem;
+    padding-top: 1.2rem;
+    padding-bottom: 0.8rem;
+    margin-top: 1.5rem;
+    box-shadow: 0px 0px 17px 2px rgba(0,0,0,0.32);
+    font-size: medium;
+}
+
+button:hover {
+    background-color: gold;
+    color: #048c7f;
+    border: solid;
+    border-color: #79705D;
+    box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.32);
+
+}
+
+.sortDropDown{
+    font-family: "Inknut Antiqua";
+    color: #79705D;
+    background-color: white;
+    margin-top: 3rem;
+    box-shadow: 0px 0px 17px 2px rgba(0,0,0,0.32);
+    font-size: medium;
+    padding-left: 2.3rem;
+    padding-right: 2.3rem;
+    margin-right: 2rem;
+}
+
+.sortButton{
+        font-family: "Inknut Antiqua";
+        color: #79705D;
+        background-color: white;
+        margin-top: 1.5rem;
+        box-shadow: 0px 0px 17px 2px rgba(0,0,0,0.32);
+        font-size: medium;
+    }
+
+.sortButton:hover {
+    background-color: #551a8b;
+    color: #F0ECE3;
+    border: solid;
+    border-color: #79705D;
+    box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.32);
+
+}
+
+
+
+.coinsDiv {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    justify-content: space-evenly;
+}
+
+.singleCoin{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 30rem;
+    line-height: 1.5rem;
+    box-shadow: 0px 0px 17px 2px rgba(0,0,0,0.32);
+    background-color: white;
+    position: relative;
+}
+
+.about{
+    display: flex;
+    margin-top: 2rem;
+    border-top: thick double #048c7f;;
+    background-color: #FFF5E4;
+    text-align: center;
+
+}
+
+.topFiveNav{
+    display: flex;
+    flex-direction: column;
+    border-bottom: thick double #048c7f;
+    padding: 1rem;
+    margin-top: 3rem;
+
+}
+
+.backToHomeButton5 {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+
+.Emperors{
+    display: flex;
+    justify-content: center;
+}
+
+.emperorsList {
+    display: flex;
+    flex-direction: column;
+}
+
+.emperorTitle{
+    font-size: xx-large;
+    font-family: Constantine;
+    color: #79705D;
+    margin-bottom: -1.5rem;
+}
+
+#emperor{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 50rem;
+    line-height: 2rem;
+    box-shadow: 0px 0px 17px 2px rgba(0,0,0,0.32);
+    background-color: white;
+    position: relative;
+    align-items: center;
+}
+
+#emperorImage{
+    width: 50%;
+    height: fit-content;
+    box-shadow: 0px 0px 17px 6px rgba(0,0,0,0.32);
+    margin-top: 1rem;
+
+}
+
+.coinTitle{
+    font-size: large;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-family: Constantine;
+    color: #79705D;
+}
+
+
+.coinText{
+    display: flex;
+    flex-direction: column;
+    font-size: small;
+
+}
+.coinImage{
+    width: 60%;
+    height: fit-content;
+    margin-top: 1rem;
+    margin-left: 5rem;
+}
+
+.deleteButton{
+    font-family: "Trajanus Roman";
+    color: #79705D;
+    background-color: white;
+    box-shadow: 0px 0px 17px 2px rgba(0,0,0,0.32);
+    font-size: small;
+    padding-top: 0.6rem;
+    padding-bottom: 0.4rem;
+    position: absolute;
+    right:    1rem;
+    bottom:   1rem;
+}
+
+.deleteButton:hover {
+    background-color: #551a8b;
+    color: #F0ECE3;
+    border: solid;
+    border-color: #79705D;
+    box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.32);
+
+}
+
+
+.top {
+    font-family: sans-serif;
+    color: #79705D;
+    background: white;
+    border-style: solid;
+    border: #79705D;
+    border-width: 3px;
+    border-radius: 100px;
+    padding: 1rem;
+    position: sticky;
+    bottom: 20px;
+    --offset: 100px;
+    margin-top: calc(100vh + var(--offset));
+    scroll-behavior: smooth;
+    font-family: Constantine;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+.top:hover {
+    background-color: #551a8b;
+    color: #F0ECE3;
+    border: solid;
+    border-color: #79705D;
+    box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.32);
+}
+@media only screen and (max-width: 1000px) {
+    .siteTitle {
+        text-align: center;
+        color: #79705D;
+        font-family: "Trajanus Roman";
+        font-size: xx-large;
+        /*border-bottom-style: solid;*/
+        /*border-bottom: #036c5f;*/
+        box-sizing: border-box;
+        width: 100%;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+        margin-top: -3rem;
+    }
+
+
+    #emperor{
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        width: 30rem;
+        line-height: 2rem;
+        box-shadow: 0px 0px 17px 2px rgba(0,0,0,0.32);
+        background-color: white;
+        position: relative;
+    }
+    .about{
+        display: flex;
+        margin-top: 2rem;
+        border-top: thick double #048c7f;;
+        background-color: #FFF5E4;
+        padding: 0.5rem;
+        text-align: center;
+    }
+    #siteLogo{
+        width: 50%;
+        height: fit-content;
+        margin-top: 1rem;
+        margin-bottom: -1rem;
+    }
+
+}

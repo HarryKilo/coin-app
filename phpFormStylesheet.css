@@ -1,0 +1,58 @@
+body{
+    font-family: "Inknut Antiqua";
+    background-color: #F0ECE3;
+    background-image: url("images/Beige Minimalistic Rome Italy Poster.png");
+    background-size: cover;
+    color: #79705D;
+    font-size: xxx-large;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+button{
+    font-family: "Trajanus Roman";
+    color: #79705D;
+    background-color: white;
+    padding: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    margin-top: 1.5rem;
+    box-shadow: 0px 0px 17px 2px rgba(0,0,0,0.32);
+    font-size: x-large;
+    text-align: center;
+
+}
+
+button:hover {
+    background-color: gold;
+    color: #048c7f;
+    border: solid;
+    border-color: #79705D;
+    box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.32);
+
+}
+
+.submitGif{
+    width:50%;
+    height: 50%;
+    box-shadow: 0px 0px 17px 5px rgba(0,0,0,0.32);
+}
+
+@media only screen and (max-width: 1000px) {
+
+    body {
+        font-family: "Inknut Antiqua";
+        background-color: #F0ECE3;
+        background-image: url("images/Beige Minimalistic Rome Italy Poster.png");
+        background-size: cover;
+        color: #79705D;
+        font-size: x-large;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+    }
+}
